@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let x = 10;
+        let a =[];
+        let i, tg, j;
+        for (i=0;i<10;i++){
+            a[i] = parseInt(prompt('Nhập các giá trị của mảng!'));
+        }
+
+        for (i=0;i<x-1;i++){
+            for ( j=i+1;j<x;j++){
+                if (a[i]<a[j]){
+                    tg =a[i];
+                    a[i] = a[j];
+                    a[j] = tg;
+                }
+            }
+        }
+        console.log(a);
+    </script>
+</body>
+</html>

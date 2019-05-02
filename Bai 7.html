@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // splice(vị trí, số lượng phần tử bị xóa)
+        let a =[1,2,3,4,5,6,7,8,9,1];
+        let v = 1;
+        for (let i=0; i<a.length;i++){
+            if (v === a[i]){
+                console.log(i);
+                a.splice(i,1);
+                break;
+            }
+        }
+        document.write(a);
+    </script>
+</body>
+</html>
